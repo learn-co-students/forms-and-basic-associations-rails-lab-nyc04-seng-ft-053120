@@ -45,7 +45,7 @@ class SongsController < ApplicationController
   end
 
   private
-
+  #the artist_name key here prompts a call to artist_name= method
   def song_params
     params.require(:song).permit(:title, :artist_name, :genre_id, note_contents: [])
   end
